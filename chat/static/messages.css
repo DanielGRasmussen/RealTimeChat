@@ -1,0 +1,89 @@
+html, body, main {
+    margin: 0;
+    height: 100%;
+    position: relative;
+}
+
+/* Messages */
+#messages {
+    position: absolute;
+    width: 100%;
+    height: calc(100% - 55px);
+    overflow-y: auto;
+    /* display: flex; */
+    /* flex-direction: column-reverse; */
+    padding-bottom: 10px;
+}
+/* Prevents from scrolling */
+#messages * {
+    overflow-anchor: none;
+}
+#anchor {
+    overflow-anchor: auto;
+    height: 1px;
+}
+
+/* Basic Elements */
+.message {
+    width: 100%;
+}
+
+.from {
+    font-size: 12pt;
+    margin: 0px 5px 0 5px;
+}
+
+.content {
+    width: fit-content;
+    padding: 5px 7px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 0;
+}
+
+/* If it is or isn't from user */
+.else {
+    text-align: left;
+}
+
+.me {
+    text-align: right;
+}
+
+/* If it is or isn't from user content */
+.else .content {
+    background: lightgreen;
+}
+
+.me .content {
+    background: lightblue;
+    margin-left: auto;
+}
+
+/* Message sending field */
+#sending {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    height: fit-content;
+    border-top: 3px solid black;
+}
+
+#message {
+    width: calc(100% - 70px);
+    border: 0;
+    height: 40px;
+    font-size: 16pt;
+}
+
+#message:focus {
+    border: 0;
+    outline: 0;
+}
+
+#send {
+    position: absolute;
+    right: 10px;
+    bottom: 12px;
+    margin: 0;
+}

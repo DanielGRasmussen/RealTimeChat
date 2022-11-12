@@ -1,0 +1,40 @@
+body {
+    background: lightblue;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 20px;
+}
+
+form {
+    text-align: center;
+}
+
+fieldset {
+    border: 0;
+    text-align: center;
+}
+
+fieldset label {
+    font-size: 14pt;
+}
+
+fieldset input {
+    height: 36px;
+    width: 300px;
+    border-radius: 6px;
+    font-size: 14pt;
+}
+
+form input#button {
+    text-align: center;
+    width: 100px;
+    height: 36px;
+    font-size: 13pt;
+    border-radius: 6px;
+}
+
+form input#button:hover {
+    cursor: pointer;
+}
